@@ -1,3 +1,4 @@
+// java code for binary search in a sort array of int
 // this is before implementing the twoSum solution for the sorted Array
 // basically, the the towSum problem is essentially the search problem
 // given a target and a number(array[i]), search for the (target-array[i])
