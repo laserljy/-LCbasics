@@ -24,9 +24,12 @@ public class LC_atoi {
 				else if(s.charAt(i)=='-') sign=-1;
 				//System.out.println(sign);
 			}
-			else if(i==s.length()-1 && Character.isDigit(s.charAt(i))){
-				digit=Character.getNumericValue(s.charAt(i));
-				return sign*(sum*10+digit);
+			else if(i==s.length()-1){
+				if(Character.isDigit(s.charAt(i))){	
+					digit=Character.getNumericValue(s.charAt(i));
+					return sign*(sum*10+digit);
+				}
+				else return sign*sum;
 			}
 			else{
 				// check each char is digit or not?
