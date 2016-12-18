@@ -38,7 +38,7 @@ public class LC_atoi {
 				else return sign*sum;  // if not digit;
 				
 				// check the range of sum is valid
-				if(sum>maxDiv10||sum==maxDiv10&&digit>8){
+				if(sum>maxDiv10||sum==maxDiv10&&digit>8){ // THIS IS THE KEY, CHECK OVERFLOW PRE-CONDITION!!
 					return sign==1? Integer.MAX_VALUE:Integer.MIN_VALUE;
 				}
 				sum=sum*10 + digit;
