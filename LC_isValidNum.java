@@ -31,7 +31,7 @@ public class LC_isValidNum {
 			i++;
 			flag=true;
 		}
-		
+		while(i<len && s.charAt(i)==' ') i++;
 		return i==s.length() && flag;
 	}
 	
